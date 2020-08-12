@@ -1,0 +1,26 @@
+<?php
+/**
+ * Description
+ *
+ * @package ${NAMESPACE}
+ * @sice 1.0.0
+ * @author Asier Moreno
+ * @link https://getkeypress.com
+ * @license GPL2
+ */
+
+use Cloudflare\API\Auth;
+
+class KPDNS_Cloudflare_API_Token_Auth implements Auth\Auth {
+	private $api_token;
+
+	public function __construct(string $api_token ) {
+		$this->api_token  = $api_token;
+	}
+
+	public function getHeaders(): array {
+		return [
+			'Authorization'   => 'Bearer ' . $this->api_token //API token in standard Bearer <token> format.
+		];
+	}
+}

@@ -1,0 +1,219 @@
+/**
+ * Admin-specific CSS.
+ */
+
+#kpdns-license .status-active {
+    color: green;
+}
+
+#kpdns-license .status-inactive {
+    color:red;
+}
+
+.kpdns-tooltip-icon:before {
+    cursor: help;
+    content: "\f223";
+    font: 400 20px/1 dashicons!important;
+    vertical-align: middle;
+}
+
+.kpdns-tooltip-text {
+    background: #333 !important;
+    border-radius: 3px !important;
+    box-shadow: 1px 1px 2px 1px rgba(214, 214, 214, 0.5);
+    color: #dedede !important;
+    max-width: 400px;
+    padding: 7px;
+    text-rendering: optimizeLegibility;
+    z-index: 9999;
+}
+
+.kpdns-hidden {
+    display: none;
+}
+
+.kpdns .ui-widget-overlay {
+    background: #000000;
+    opacity: .8;
+    filter: Alpha(Opacity=80);
+    z-index: 9995;
+}
+
+.kpdns .ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.kpdns .ui-dialog {
+    z-index: 9999;
+    background-color: #ffffff;
+    width: 650px!important;
+    padding: 30px 30px 5px 30px;
+}
+
+.kpdns .ui-dialog .ui-dialog-titlebar {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.kpdns .ui-widget-header {
+    color: #333333;
+    font-weight: bold;
+}
+
+.kpdns .ui-dialog-titlebar {
+    background-color: #ffffff;
+}
+
+.kpdns .ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 20px;
+    margin: -10px 0 0 0;
+    padding: 1px;
+    height: 20px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.kpdns .ui-dialog-buttonpane {
+    background-color: #ffffff;
+    padding: 20px 30px;
+}
+
+.kpdns .ui-dialog-buttonset {
+    overflow: auto;
+}
+
+.kpdns .ui-dialog-buttonpane button {
+    float: right;
+}
+
+.kpdns .ui-button-icon-primary:before {
+    font-family: dashicons;
+    content: "\f153";
+    font-size: 20px;
+}
+
+.kpdns .no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.kpdns .ui-dialog-titlebar-close .ui-button-text {
+    display: none;
+}
+
+.kpdns-dialog-cancel-btn {
+    margin-right: 10px!important;
+}
+
+.kpdns-message-success, .kpdns-message-success a {
+    color: green;
+}
+
+.kpdns-message-error, .kpdns-message-error a {
+    color: red;
+}
+
+#kpdns-provider-settings-buttons {
+    margin-top: 50px;
+}
+
+.kpdns .form-table th p {
+    font-weight: initial;
+}
+
+#kpdns-glue-records-dialog {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#kpdns-glue-records-dialog td, #kpdns-glue-records-dialog th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#kpdns-glue-records-dialog tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#kpdns-glue-records-dialog th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #516169;
+    color: white;
+}
+
+input[type="text"].kpdns-input-invalid {
+    box-sizing: border-box;
+    border: 1px solid red!important;
+}
+
+input[type="text"].kpdns-input-valid {
+    box-sizing: border-box;
+    border: 1px solid green!important;
+}
+
+.kpdns-input-validation-icon {
+    font: 400 20px/1 dashicons!important;
+}
+
+.kpdns-input-valid-icon {
+    content: "\f147";
+    color: green;
+}
+
+.kpdns-input-invalid-icon {
+    color: red;
+}
+
+/** Add/edit record **/
+
+#kpdns-record-fields-container {
+    /*display: table;*/
+}
+
+.kpdns-record-field-row-container {
+    width: 100%;
+    /*display: table-row;*/
+}
+
+.kpdns-record-label-container {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+    padding: 20px 10px 20px 0;
+    width: 200px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.kpdns-record-label-container label {
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.kpdns-record-field-container {
+    display: table-cell;
+    margin-bottom: 9px;
+    padding: 15px 10px;
+    line-height: 1.3;
+    vertical-align: top;
+}
+
+.kpdns-record-field-container .description {
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.kpdns-ttl-unit-select {
+    vertical-align: initial!important;
+}

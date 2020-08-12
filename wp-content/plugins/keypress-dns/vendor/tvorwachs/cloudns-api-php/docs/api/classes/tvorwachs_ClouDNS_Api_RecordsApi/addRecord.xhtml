@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:pu="http://schema.phpunit.de/coverage/1.0" lang="en">
+  <head>
+    <title>phpDox - tvorwachs\ClouDNS\Api\RecordsApi::addRecord</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.xhtml#tvorwachs_ClouDNS_Api">tvorwachs\ClouDNS\Api</a>
+          </li>
+          <li class="separator">
+            <a title="tvorwachs\ClouDNS\Api\RecordsApi" href="../../classes/tvorwachs_ClouDNS_Api_RecordsApi.xhtml">RecordsApi</a>
+          </li>
+          <li class="separator">addRecord</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#parameter">Parameter</a>
+          </li>
+          <li>
+            <a href="#return">Return</a>
+          </li>
+          <li>
+            <a href="../../source/Api/RecordsApi.php.xhtml#line70">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1><small>tvorwachs\ClouDNS\Api\RecordsApi::</small>addRecord</h1>
+        <h4>Add new record to domain zone.</h4>
+        <p>Note: This function is available only for master zones. Works with reverse zones too.</p>
+        <ul/>
+        <h2 id="signature">Signature</h2>
+        <div class="styled synopsis">
+          <code>public function addRecord(string
+        $domain,
+            string
+        $recordType,
+            string
+        $host,
+            string
+        $record,
+            integer
+        $ttl,
+            [array
+        $options = ] )
+            </code>
+        </div>
+        <h2 id="parameterlist">Parameters</h2>
+        <dl class="styled">
+          <dt><code>$domain</code>
+                —
+                string</dt>
+          <dd/>
+          <dt><code>$recordType</code>
+                —
+                string</dt>
+          <dd/>
+          <dt><code>$host</code>
+                —
+                string</dt>
+          <dd/>
+          <dt><code>$record</code>
+                —
+                string</dt>
+          <dd/>
+          <dt><code>$ttl</code>
+                —
+                integer</dt>
+          <dd/>
+          <dt><code>$options</code>
+                —
+                array</dt>
+          <dd><br/>More Options ($options-Array):<br/>priority - Integer - Priority for MX or SRV record<br/>weight - Integer - Weight for SRV record<br/>port - Integer - Port for SRV record<br/>frame - Integer - 0 or 1 for Web redirects to disable or enable frame<br/>frame-title - String - Title if frame is enabled in Web redirects<br/>frame-keywords - String - Keywords if frame is enabled in Web redirects<br/>frame-description - String - Description if frame is enabled in Web redirects<br/>save-path - Integer - 0 or 1 for Web redirects<br/>redirect-type - Integer - 301 or 302 for Web redirects if frame is disabled<br/>mail - Integer - E-mail address for RP records<br/>txt - Integer - Domain name for TXT record used in RP records<br/>algorithm - Integer - Algorithm used to create the SSHFP fingerprint. Required for SSHFP records only.<br/>fptype - Integer - Type of the SSHFP algorithm. Required for SSHFP records only.<br/>status - Integer - Set to 1 to create the record active or to 0 to create it inactive. If omitted the record will be created active.<br/>geodns-location - Integer - ID of a GeoDNS location for A, AAAA or CNAME record. The GeoDNS locations can be obtained with List GeoDNS locations<br/>caa_flag - Integer - 0 - Non critical or 128 - Critical<br/>caa_type - String - Type of CAA record. The available flags are issue, issuewild, iodef.<br/>caa_value - String - If caa_type is issue, caa_value can be hostname or ";". If caa_type is issuewild, it can be hostname or ";". If caa_type is iodef, it can be "mailto:someemail@address.tld, http://example.tld or http://example.tld.</dd>
+        </dl>
+        <h2 id="return">Returns</h2>
+        <dl class="styled">
+          <dt>array</dt>
+          <dd/>
+        </dl>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.9.0 - Copyright (C) 2010 - 2017 by Arne Blankerts</span>
+    </footer>
+  </body>
+</html>
